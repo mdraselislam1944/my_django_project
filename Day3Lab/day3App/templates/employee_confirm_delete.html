@@ -1,0 +1,9 @@
+<h1 class="mb-5">Delete Employee</h1>
+<hr>
+<p class="h5">Are you sure you want to delete this record:</p>
+<h3>{{ employee.name }}</h3>
+<form action="" method="POST">
+{% csrf_token %}
+<input type="submit" value="Confirm">
+<input type="submit" onclick="window.location='{{list_all}}'; return false;" value="Cancel">
+</form>
